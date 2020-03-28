@@ -21,7 +21,6 @@ services:
     volumes:
       - ./../:/var/www/html
       - ./php/php.ini:/usr/local/etc/php/php.ini
-      - ./php/conf.d/session.ini:/usr/local/etc/php/conf.d/session.ini
       - ~/.ssh/known_hosts:/root/.ssh/known_hosts
       - ${SSH_AUTH_SOCK}:/ssh-auth.sock
     user: www-data
@@ -38,7 +37,6 @@ services:
     volumes:
       - ./../:/var/www/html
       - ./php/php.ini:/usr/local/etc/php/php.ini
-      - ./php/conf.d/session.ini:/usr/local/etc/php/conf.d/session.ini
       - ./http/conf/000-default.conf:/etc/apache2/sites-available/000-default.conf
     networks:
       laravel-devkit:
