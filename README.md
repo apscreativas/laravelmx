@@ -33,13 +33,19 @@ Para poder correr de manera desantendida y crear todos los contenedores solo deb
 
 ## Inicializar Laravel 
 
-Debemos de descargar todas las dependencias y librerias requeridas para LARAVEL. En este paso correremos el contenedor ya listo (CLI) el cual nos permitira correr cualquier codigo sobre la carpeta raíz del proyecto. Nuestro CLI ya incluye COMPOSER, PHP y comandos de LINUX para interacturar con dicho contenedor. ES importante hacerles mención que este contenedor solo crea al momento de ejecutar un comando, destruyendose una vez finalizado el mismo.
+Debemos de descargar todas las dependencias y librerias requeridas para LARAVEL. En este paso correremos el contenedor ya listo (CLI) el cual nos permitira correr cualquier comando sobre la carpeta raíz del proyecto. Nuestro CLI ya incluye COMPOSER, PHP y comandos de LINUX para interacturar con dicho contenedor. ES importante hacerles mención que este contenedor solo se crea al momento de ejecutar un comando, destruyendose una vez finalizado el mismo.
 
 Instalar LARAVEL 
 
     $ docker-compose run cli composer install
     $ docker-compose run cli php artisan key:generate
     $ docker-compose run cli php artisan migrate 
+    
+## Detener Dockerizado (Contenedores)
+
+Estando dentro de la carpeta .docker de nuestro proyecto solo debemos correr el siguiente comando 
+
+    $ docker-compose down
 
 ## Licencia
 
