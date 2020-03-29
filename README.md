@@ -21,15 +21,15 @@ Este es un Dockerizado de Laravel + Apache + MariaDB , el cual esta listo para p
 
 Debemos de descargar nuestro proyecto en la carpeta que deseemos instalarla : 
 
-$ git clone https://github.com/apscreativas/laravelmx.git
+    $ git clone https://github.com/apscreativas/laravelmx.git
 
 Todo nuestro código para la creación de Contenedores se encuentra en la carpeta .docker de este proyecto, así pues debemos de entrar a la misma
 
-$ cd .docker
+    $ cd .docker
 
 Para poder correr de manera desantendida y crear todos los contenedores solo debemos correr el siguiente comando 
 
-$ docker-compose up -d 
+    $ docker-compose up -d 
 
 ## Inicializar Laravel 
 
@@ -37,9 +37,9 @@ Debemos de descargar todas las dependencias y librerias requeridas para LARAVEL.
 
 Instalar LARAVEL 
 
-$ docker-compose run cli composer install
-$ docker-compose run cli php artisan key:generate
-$ docker-compose run cli php artisan migrate 
+    $ docker-compose run cli composer install
+    $ docker-compose run cli php artisan key:generate
+    $ docker-compose run cli php artisan migrate 
 
 ## Licencia
 
